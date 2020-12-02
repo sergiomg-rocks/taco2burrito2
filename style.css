@@ -1,0 +1,353 @@
+body {
+  background-color: #cecb41;
+  overflow: hidden;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+}
+/*
+svg {
+  width: 150vw;
+  position: absolute;
+  top: 50%;
+  transform: translate(-40%, -50%);
+} */
+
+/* Basic coloring */
+.cls-1,
+.cls-2,
+.cls-26,
+.cls-37 {
+  fill: none;
+}
+.cls-1,
+.cls-3 {
+  clip-rule: evenodd;
+}
+.cls-3,
+.cls-7,
+.cls-9 {
+  fill: #dcaa7c;
+}
+.cls-4 {
+  fill: #6f402d;
+}
+.cls-5 {
+  fill: #d51d3d;
+}
+.cls-6 {
+  clip-path: url(#clip-path);
+}
+.cls-8 {
+  clip-path: url(#clip-path-2);
+}
+.cls-9 {
+  fill-rule: evenodd;
+}
+.cls-10 {
+  clip-path: url(#clip-path-3);
+}
+.cls-11 {
+  clip-path: url(#clip-path-4);
+}
+.cls-12 {
+  fill: #613c3e;
+}
+.cls-13 {
+  clip-path: url(#clip-path-5);
+}
+.cls-14 {
+  clip-path: url(#clip-path-6);
+}
+.cls-15 {
+  clip-path: url(#clip-path-7);
+}
+.cls-16 {
+  fill: #e1dfea;
+}
+.cls-17 {
+  clip-path: url(#clip-path-8);
+}
+.cls-18 {
+  clip-path: url(#clip-path-9);
+}
+.cls-19 {
+  fill: #0d0806;
+  fill: linear-gradient(0deg, rgba(220,170,124,0.6844932965299684) 0%, rgba(111,64,45,0.7728213722397477) 15%, rgba(42,25,18,0.8201399842271293) 50%, rgba(111,64,45,0.7633576498422713) 83%, rgba(220,170,124,0.7034207413249212) 100%);
+}
+.cls-20 {
+  clip-path: url(#clip-path-10);
+}
+.cls-21 {
+  fill: #f6f5f5;
+}
+.cls-22 {
+  fill: #a17325;
+
+}
+
+.cls-23 {
+  clip-path: url(#clip-path-11);
+}
+.cls-24 {
+  fill: #fddbb2;
+}
+.cls-25 {
+  clip-path: url(#clip-path-12);
+}
+.cls-26 {
+  stroke: #613c3e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cls-27 {
+  clip-path: url(#clip-path-13);
+}
+.cls-28 {
+  clip-path: url(#clip-path-14);
+}
+.cls-29 {
+  fill: rgb(77, 59, 43);
+  clip-path: url(#clip-path-15);
+  fill: url(#grad1);
+}
+
+.cls-30 {
+  clip-path: url(#clip-path-16);
+}
+.cls-31 {
+  fill: #e72686;
+}
+.cls-32 {
+  clip-path: url(#clip-path-17);
+}
+.cls-33 {
+  fill: #d382b5;
+}
+.adad {
+color: rgb(41, 31, 22)
+}
+.cls-34 {
+  clip-path: url(#clip-path-18);
+}
+.cls-35 {
+  fill: #5e3f3a;
+}
+.cls-36 {
+  clip-path: url(#clip-path-19);
+}
+.cls-37 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+.cls-38 {
+  clip-path: url(#clip-path-20);
+}
+.cls-39 {
+  clip-path: url(#clip-path-21);
+}
+.cls-40 {
+  clip-path: url(#clip-path-22);
+}
+.cls-41 {
+  fill: #fecc17;
+}
+.cls-42 {
+  clip-path: url(#clip-path-23);
+}
+.cls-43 {
+  fill: #fddcb7;
+}
+.cls-44 {
+  fill: #21a8d3;
+}
+.cls-45 {
+  fill: #cdd121;
+}
+.cls-46 {
+  fill: #ededeb;
+}
+.cls-47 {
+  fill: #161616;
+}
+.cls-48 {
+  fill: #e71a79;
+}
+
+/*Animations */
+
+/* Eric Arm + hand */
+#arm, #hair, #mouth, 
+#finger, #eyesPu, #puppet, #faceP {
+  animation-name: handBG_rot;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes handBG_rot {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  75% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+
+#arm, #eric_inner_arm {
+  animation-name: inArm ;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes inArm {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: center center
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+#eric_outter_arm {
+  animation-name: outArm ;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes s {
+  0%,
+  100% {
+    transform: rotate(-20deg) translate(0%,10%);
+    transform-origin: center center; 
+  }
+  50% {
+    transform: rotate(-10deg) translate(0%,20%);
+  }
+}
+
+
+#hand {
+  animation-name: hand;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform: rotate(3deg);
+}
+
+@keyframes hand {
+  0%,
+  100% {
+    transform: rotate(-1.5deg);
+    transform-origin: center center  }
+  50% {
+    transform: rotate(0.5deg);
+    transform-origin: center center  }
+}
+
+
+
+/* Mouth */
+
+/*puppet body */
+
+#hair, #mouth, 
+#finger, #eyesPu, #puppet, #faceP {
+  animation-name: x;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+}
+
+@keyframes x {
+  0%,
+  100% {
+    transform: skewX(2deg);	
+    transform: rotate(0deg);
+  transform-origin: center center;
+  }
+  50% {
+    transform: skewX(-1deg);	
+    transform: rotate(0.5deg);
+
+        transform-origin: center center  }
+}
+
+
+# {
+  animation-name: x;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform: rotate(25deg);
+
+}
+
+@keyframes y {
+  0%,
+  100% {
+    transform: rotate(50deg);
+    transform-origin: left center  }
+  50% {
+    transform: rotate(-1deg);
+    transform-origin: center center  }
+}
+
+Arm
+
+eric_inner_arm
+
+eric_outter_arm
+
+Rings 
+ring_down
+ring_up
+
+Hair 
+h_right
+h_left
+
+mouth
+mouth_inside
+mounth_down
+
+hand 
+
+finger 
+
+Coat
+leftCoat
+rightCoat
+
+panties
+bra
+
+arm_right
+arm_left
+
+leg_right
+leg_left
